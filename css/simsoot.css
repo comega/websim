@@ -1,0 +1,63 @@
+html{
+    height: 100%;
+}
+.myjumbo{
+    background-image: url("../img/bg.jpg");
+    height: 100%;
+    width: 100%;
+    margin-top: 1rem !important;
+    position: relative;
+    overflow: hidden;
+}
+
+img#simsoot{
+    position: absolute;
+    top: 0px;
+    right: 2rem;
+    height: 150px;
+}
+div.markets{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 400px !important;
+}
+.markets_buttons{
+    margin: 1em;
+}
+.markets_buttons a{
+    margin-left: .2em;
+}
+
+#simsoot_phone{
+
+    position: flex;
+}
+
+#ios{
+    text-align: center;
+}
+#ios h3{
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 3px darkred solid;
+
+}
+
+.footer{
+    background-color: #eeeeee;
+    position: relative;
+    buttom:0px;
+    margin-bottom: 0px;
+}
+.footer p{
+    text-align: center;
+}
+#namad{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+
+}
