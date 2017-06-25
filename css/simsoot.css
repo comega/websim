@@ -3,7 +3,7 @@ html{
 }
 .myjumbo{
     background-image: url("../img/bg.jpg");
-    height: 100%;
+    height: 500px;
     width: 100%;
     margin-top: 1rem !important;
     position: relative;
@@ -14,7 +14,7 @@ img#simsoot{
     position: absolute;
     top: 0px;
     right: 2rem;
-    height: 150px;
+    height: 130px;
 }
 div.markets{
     display: flex;
@@ -29,11 +29,14 @@ div.markets{
 }
 .markets_buttons a{
     margin-left: .2em;
+    width: 16rem;
 }
 
 #simsoot_phone{
 
-    position: flex;
+    position: absolute;
+    bottom: 0px;
+    height: 100%;
 }
 
 #ios{
@@ -59,5 +62,27 @@ div.markets{
     display: flex;
     justify-content: center;
     padding: 1em;
+}
 
+.download_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.download_link{
+    display: block;
+    float: right;
+    margin-bottom: .6em;
+}
+
+.markets_buttons img{
+
+    display: inline-block;
+    float: left;
+}
+.markets_buttons a{
+
+    border: 2px #ffffff solid;
 }
