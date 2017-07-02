@@ -12,35 +12,37 @@
 
     <div class="myjumbo">
         <img  class="img img-responsive hidden-xs" id="simsoot" src="img/simsoot.gif" alt=""/>
+        <button class="btn" id="aboutUs"> <span>درباره ما</span></button>
+        <button class="btn" id="contactUs"> <span>تماس با ما</span></button>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-md-6 col-md-offset-2 ">
+            <div class="row markets">
+                <div class="col-sm-6 col-xs-6 col-xs-offset-3 col-sm-offset-2 ">
                     <div class="markets">
                         <row class="markets_buttons ">
-                            <div class="col-md-4 download_link ">
-                                <a class="btn btn-default btn-md"><img   width="25px" class="img img-responsive" src="img/forward_link.png" alt=""/> <span>دانلود مستقیم </span> </a>
+                            <div class="col-md-4 col-sm-6 download_link ">
+                                <a target="_blank" href="http://www.simsoot.com/dl" class="btn btn-default btn-md"><span>دانلود مستقیم </span> <img width="25px" class="img img-responsive" src="img/forward_link.png" alt=""/>  </a>
                             </div>
-                            <div class="col-md-4 download_link">
-                                <a class="btn btn-default btn-md"><span>Google Play</span><img  width="25px"  class="img img-responsive" src="img/google_play.png" alt=""/></a>
+                            <div class="col-md-4 col-sm-6 download_link">
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.projects.bahartel.simsoot" class="btn btn-default btn-md"><span>Google Play</span><img  width="25px"  class="img img-responsive" src="img/google_play.png" alt=""/></a>
                             </div>
-                            <div class="col-md-4 download_link">
-                                <a class="btn btn-default btn-md"><span>مایکت</span><img  width="25px"  class="img img-responsive" src="img/myket.png" alt=""/></a>
+                            <div class="col-md-4 col-sm-6 download_link">
+                                <a target="_blank" href="http://www.myket.ir/simsoot" class="btn btn-default btn-md"><span>مایکت</span><img  width="25px"  class="img img-responsive" src="img/myket.png" alt=""/></a>
                             </div>
-                            <div class="col-md-4 download_link">
-                                <a class="btn btn-default btn-md"><span>ایران اپس</span><img  width="25px"  class="img img-responsive" src="img/iranapps.png" alt=""/></a>
+                            <div class="col-md-4 col-sm-6 download_link">
+                                <a target="_blank" href="http://iranapps.ir/app/com.projects.bahartel.simsoot" class="btn btn-default btn-md"><span>ایران اپس</span><img  width="25px"  class="img img-responsive" src="img/iranapps.png" alt=""/></a>
                             </div>
-                            <div class="col-md-4 download_link">
-                                <a class="btn btn-default btn-md"><span>چارخونه</span><img  width="25px"  class="img img-responsive" src="img/charkhooneh.png" alt=""/></a>
+                            <div class="col-md-4 col-sm-6 download_link">
+                                <a target="_blank" href="http://www.charkhoneh.com/s/2487" class="btn btn-default btn-md"><span>چارخونه</span><img  width="25px"  class="img img-responsive" src="img/charkhooneh.png" alt=""/></a>
                             </div>
-                            <div class="col-md-4 download_link">
-                                <a class="btn btn-default btn-md"><span>پارس هاب</span><img  width="25px"  class="img img-responsive" src="img/parshub.png" alt=""/></a>
+                            <div class="col-md-4 col-sm-6 download_link">
+                                <a target="_blank" href="http://www.parshub.com/content.jsf?uuid=930511103" class="btn btn-default btn-md"><span>پارس هاب</span><img  width="25px"  class="img img-responsive" src="img/parshub.png" alt=""/></a>
                             </div>
                         </row>
 
                     </div>
                 </div>
-                <div class="col-sm-4  col-md-4" style="position: relative;height: 500px" >
-                    <img class="img img-responsive hidden-xs" id="simsoot_phone" src="img/simsoot_phone.png" alt=""/>
+                <div class="col-sm-4  hidden-xs" style="position: relative;height: 500px" >
+                    <img class="img img-responsive" id="simsoot_phone" src="img/simsoot_phone.png" alt=""/>
                 </div>
             </div>
         </div>
@@ -56,7 +58,7 @@
             <div class="col-sm-7 col-sm-offset-1">
                 <h2>
                     <img src="img/about-us.png" alt=""/>
-                    درباره سیم‌سوت
+                    درباره سیم سوت
                 </h2>
                 <p>
                     اپلیکیشن سیم‌سوت یک نرم افزار بسیار کاربردی است که  شما می‌توانید با سریع‌ترین روش موجود شارژ وبسته اینترنتی تهیه نمایید .
@@ -75,5 +77,15 @@
         </div>
         <p>تمام حقوق این سایت متعلق به <a class="" href="#">سیم‌سوت</a> است</p>
     </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+
+        $("#aboutUs").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#about-us").offset().top
+            }, 1000);
+        });
+    </script>
 </body>
 </html>

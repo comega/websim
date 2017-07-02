@@ -1,9 +1,31 @@
+
+@font-face{
+    font-family:"yekan";
+    src: url("../fonts/Yekan.ttf");
+    src: url("../fonts/Yekan.woff");
+    src: url("../fonts/Yekan.woff");
+}
+
+.yekan-font{
+
+    font-family: yekan;
+}
+
 html{
     height: 100%;
 }
+body{
+    font-family: "yekan";
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "yekan";
+}
+p, div {
+    font-family: "yekan";
+}
 .myjumbo{
     background-image: url("../img/bg.jpg");
-    height: 500px;
+    /*height: 500px;*/
     width: 100%;
     margin-top: 1rem !important;
     position: relative;
@@ -14,15 +36,64 @@ img#simsoot{
     position: absolute;
     top: 0px;
     right: 2rem;
-    height: 130px;
+    height: 180px;
+}
+#aboutUs{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    height: 7rem;
+    width: 7rem;
+    border-top: 2px solid darkred;
+    border-right: 2px solid darkred;
+    border-bottom: 2px solid darkred;
+    background-image:url('../img/icon-simsoot-about-us.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: #373636;
+    background-size: 3em;
+    color: #fff;
+}
+#aboutUs:hover{
+    border: 3px solid darkred;
+    background-color: #000;
+}
+#contactUs{
+    position: absolute;
+    left: 0;
+    top: 220px;
+    height: 7rem;
+    width: 7rem;
+    border-top: 2px solid darkred;
+    border-right: 2px solid darkred;
+    border-bottom: 2px solid darkred;
+    background-image:url('../img/icon-simsoot-contact-us.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: #373636;
+    background-size: 3em;
+    color: #fff;
+}
+#contactUs:hover{
+    border: 3px solid darkred;
+    background-color: #000;
+}
+#contactUs span{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+#aboutUs span{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
 }
 div.markets{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
     align-content: center;
-    height: 400px !important;
+    /*height: 400px !important;*/
 }
 .markets_buttons{
     margin: 1em;
@@ -35,12 +106,18 @@ div.markets{
 #simsoot_phone{
 
     position: absolute;
-    bottom: 0px;
-    height: 100%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
 }
 
 #ios{
     text-align: center;
+    margin-bottom: 2.2em;
+    margin-top: 1em;
 }
 #ios h3{
     display: inline-block;
@@ -65,24 +142,25 @@ div.markets{
 }
 
 .download_link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+    /*display: relative;*/
+    margin-bottom: .5em;
+
 }
-.download_link{
-    display: block;
-    float: right;
-    margin-bottom: .6em;
+
+.download_link a{
+    position: relative;
+    display: inline-block;
+}
+.download_link img{
+    position: absolute;
+    left: 3px;
 }
 
 .markets_buttons img{
-
     display: inline-block;
-    float: left;
+    margin-right: 1em;
 }
 .markets_buttons a{
 
-    border: 2px #ffffff solid;
+    border: 1px #ffffff solid;
 }
